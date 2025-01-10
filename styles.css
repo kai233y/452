@@ -1,0 +1,142 @@
+/* mark by Kay (Chuzekai Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #148cdbc0;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Gold */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+main h2, main h3 {
+    color: #333;
+}
+
+.intro, .values, .cta, .about-us, .blog-posts {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.values ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.values ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.cta .cta-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta .cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.support-flowchart img {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+/* Product Gallery */
+.product-gallery .product {
+    display: inline-block;
+    width: 45%;
+    margin: 20px 2%;
+    text-align: center;
+}
+
+.product-gallery img {
+    width: 100%;
+    height: auto; /* 确保图片高度自适应 */
+    border-radius: 10px;
+    max-width: 400px; /* 设置最大宽度 */
+}
+
+
+.product-gallery h3 {
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #a79813;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .cta .cta-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-gallery .product {
+        width: 100%;
+    }
+}
